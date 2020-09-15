@@ -11,7 +11,10 @@ A simple usage example:
 import 'package:Rational/Rational.dart';
 
 main() {
-  var awesome = new Awesome();
+  var r1 = Rational(1, 3);
+  var r2 = Rational(2, 3);
+  var sum = r1 + r2;
+  print(sum); // prints 1
 }
 ```
 

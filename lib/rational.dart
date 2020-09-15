@@ -1,3 +1,5 @@
+library rational;
+
 class Rational implements Comparable<Rational> {
   int _num;
   int _den;
@@ -63,8 +65,7 @@ class Rational implements Comparable<Rational> {
   @override
   bool operator ==(Object other) => compareTo(other) == 0;
 
-
-  int _gcd(int x, int y) {
+  static int _gcd(int x, int y) {
     var r = x % y;
     while (r != 0) {
       x = y;
